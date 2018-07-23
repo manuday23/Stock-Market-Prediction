@@ -1,0 +1,22 @@
+#read google finance data for a period of time and save in f variable using panda 
+
+import pandas_datareader.data as web
+import datetime
+start= datetime.datetime(2017,1,1)
+end = datetime.datetime(2017,5,27)
+f=web.DataReader("F", 'google' ,start, end)
+#f.ix['2017-01-04']
+ 
+f.loc['2017-01-04']
+
+
+
+
+
+
+# read  csv from pandas(its pandas not panda)
+import pandas as pd
+
+df = pd.read_csv("price.csv")
+
+
